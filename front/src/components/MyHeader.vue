@@ -69,9 +69,6 @@ const { handleMenu, closeModal, handleMenuClass } = useMenu();
 					<button>{{this.localStorageUsername }}</button>
 					<UserIcon/>
 				</li>
-				<li class='favorites_ui'><button href="">Избранное</button>
-					<Favorites />
-				</li>
 				<li class='compare_ui' @click="$router.push('/profile/orders')"><button>Заказы</button>
 					<Compare />
 				</li>
