@@ -65,8 +65,8 @@ const { handleMenu, closeModal, handleMenuClass } = useMenu();
 					<button>Войти</button>
 					<UserIcon />
 				</li>
-				<li @click="this.$router.push('/profile')" class='login_ui' v-if="localStorageToken !== null">
-					<button>{{this.localStorageUsername }}</button>
+				<li @click="$router.push('/profile')" class='login_ui' v-if="localStorageToken !== null">
+					<button>{{localStorageUsername }}</button>
 					<UserIcon/>
 				</li>
 				<li class='compare_ui' @click="$router.push('/profile/orders')"><button>Заказы</button>
